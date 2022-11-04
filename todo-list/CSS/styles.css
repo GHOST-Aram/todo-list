@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: var(--dark-color);
+}
+:root{
+    --primary-color:rgb(15, 151, 192);
+    --dark-color:rgb(41, 40, 40);
+    --light-color:rgb(255, 255, 255);
+    --night-color:rgb(0, 0, 0);
+    --danger-color:crimson;
+    --success-color:green;
+    --info-color:rgb(30, 92, 173);
+    --pink-color:rgb(253, 177, 190);
+    --grey-color:grey;
+    --transparent-color:transparent;
+}
+/*General */
+.container{
+    width:50%;
+    margin: auto;
+}
+input:focus{
+    outline: none;
+}
+.new-task-section input{
+width: 60%;
+}
+.new-task-section .container{
+    justify-content: space-between;
+}
+.tasks-list input{
+    width: 100%;
+}
+.tasks-list .btn{
+    background: #000;
+}
+.btn{
+    background-color: var(--dark-color);
+    white-space: nowrap;
+    transition: background-color 0.2s, transform .2s;
+}
+.btn-outline{
+    border: solid 1px grey;
+}
+.btn:hover{
+    background-color: rgba(128, 128, 100, 0.1);
+}
+.btn:active{
+    transform: scale(.98);
+}
+.edit-delete-btns{
+    right: 27%;
+}
+
+
+/*Utilities */
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}   
+.flex{
+    display: flex;
+    align-items: center;
+}
+.text-light{
+    color:var(--light-color);
+}
+.text-grey{
+    color:var(--grey-color)
+}
+.text-pink{
+    color: var(--grey-color);
+}
+.text-primary{
+    color: var(--primary-color);
+}
+.text-success{
+    color: var(--success-color);
+}
+.text-danger{
+    color: var(--danger-color);
+}
+.text-info{
+    color: var(--info-color);
+}
+.font-md{
+    font-size: 1.25rem;
+}
+.font-lg{
+    font-size: 2rem;
+}
+.font-sm{
+    font-size: 0.875rem;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-400{
+    font-weight: 400;
+}
+.p-1{
+    padding: 1rem;
+}
+.p-auto{
+    padding: .5rem;
+}
+.pt-3{
+    padding-top: 3rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.ml-1{
+    margin-left: 1rem;
+}
+.bg-transparent{
+    background-color: var(--transparent-color);
+}
+.bg-night{
+    background-color: var(--night-color);
+}
+.border-none{
+    border: none;
+}
+.border-rounded{
+    border-radius: 1.5rem;
+}
