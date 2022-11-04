@@ -22,11 +22,18 @@ body{
     --transparent-color:rgb(32, 32, 32);
 }
 /*General */
+.container{
+    width:50%;
+    margin: auto;
+}
 input:focus{
     outline: none;
 }
 .new-task-section input{
 width: 60%;
+}
+.new-task-section .container{
+    justify-content: space-between;
 }
 .tasks-list input{
     width: 100%;
@@ -48,13 +55,8 @@ width: 60%;
 .btn:active{
     transform: scale(.98);
 }
-
-.container{
-    width:70%;
-    margin: auto;
-}
 .edit-delete-btns{
-    right: 17%;
+    right: 27%;
 }
 
 
